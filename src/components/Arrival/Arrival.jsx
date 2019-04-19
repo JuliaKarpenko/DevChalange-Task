@@ -29,13 +29,10 @@ import { mapper, getData, getTomorrow, getYesterday } from '../../helpers';
 
       if ( type === 'today')  {
         date = getData();
-        console.log(date);
       } else if (type === 'tomorrow') {
         date = getTomorrow();
-        console.log(date);
       } else {
         date = getYesterday();
-        console.log(date);
       }
 
       getDepartures(date)

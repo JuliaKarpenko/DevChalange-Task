@@ -1,7 +1,3 @@
-// export const fetchData = (date) => {
-//   return API_URL = `https://api.iev.aero/api/flights/${date}`;
-//  }  
-
 export const getData = () => {
   let date = new Date();
 
