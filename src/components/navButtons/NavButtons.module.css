@@ -24,8 +24,9 @@
 }
 
 .container {
-    composes: container from '../timetibleToday/Timetible.module.css';
+    composes: container from '../TimetibleToday/Timetible.module.css';
     flex-direction: row;
+    padding-top: 24px;
 }
 
 p {

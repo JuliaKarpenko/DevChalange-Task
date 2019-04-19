@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import style from './NavButtons.module.css';
-import '../../fontello/css/fontello.css'
+import '../../fontello/css/fontello.css';
 
 const NavButtons = () => (
     <section className={style.container}>
