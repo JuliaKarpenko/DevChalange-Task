@@ -1,0 +1,64 @@
+.default.activeLink {
+    color: #1eb7ee;
+    background-color: white;
+}
+
+.default {
+    color: white;
+    text-decoration: none;
+    background-color: #73d2f0;
+    width: 100%;
+    border-radius: 60px 60px 0 0;
+    position: relative;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    height: 60px; 
+    text-transform: uppercase;
+    position: relative;
+}
+
+.container {
+    composes: container from '../timetibleToday/Timetible.module.css';
+    flex-direction: row;
+}
+
+p {
+    margin: 14px;
+}
+
+.default:nth-child(1).activeLink::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -93px;
+    bottom: 0;
+    width: 150px;
+    height: 60px;
+    border-radius: 0 50px 0 0;
+    background-color: white;
+    z-index: 1;
+}
+
+
+.default:nth-child(2).activeLink::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -93px;
+    bottom: 0;
+    width: 150px;
+    height: 60px;
+    border-radius: 50px 0 0 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.default:nth-child(2) i{
+    transform: rotate(45deg)
+}
