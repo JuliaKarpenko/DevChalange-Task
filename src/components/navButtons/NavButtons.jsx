@@ -8,13 +8,13 @@ const NavButtons = () => (
       <div className={style.container}>
         <NavLink exact activeClassName={style.activeLink} className={style.default} to="/">
             <div className={style.list}>
-                <i className="icon-departures" style={{ fontSize: "20px" }} />
+                <i className="icon-departures" style={{ fontSize: "34px" }} />
                 <p>Вылет</p>
             </div>
         </NavLink>
         <NavLink activeClassName={style.activeLink} className={style.default} to='/arrival'>
             <div className={style.list}>
-                <i className="icon-departures" style={{ fontSize: "20px" }} />
+                <i className="icon-departures" style={{ fontSize: "34px" }} />
                 <p>Прилет</p>
             </div>
         </NavLink>
