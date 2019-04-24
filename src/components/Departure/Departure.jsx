@@ -13,7 +13,8 @@ import { mapper, getData, getTomorrow, getYesterday } from '../../helpers';
   
     componentDidMount() {
       getDepartures(getData())
-      .then(response => this.setState({articles: mapper(response.data.body.departure, 'airportToID.city', 'timeToStand'), 
+      .then(response =>
+        this.setState({articles: mapper(response.data.body.departure, 'airportToID.city', 'timeBoard'), 
         }) 
       )
       .catch(error => this.setState({ error }));
@@ -31,7 +32,8 @@ import { mapper, getData, getTomorrow, getYesterday } from '../../helpers';
       }
 
       getDepartures(date)
-      .then(response => this.setState({articles: mapper(response.data.body.departure, 'airportToID.city', 'timeToStand'), 
+      .then(response =>
+        this.setState({articles: mapper(response.data.body.departure, 'airportToID.city', 'timeBoard'), 
         }) 
       )
       .catch(error => this.setState({error}))

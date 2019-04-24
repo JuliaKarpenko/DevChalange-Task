@@ -6,7 +6,6 @@ export const getData = () => {
     ("0" + (date.getMonth()+1)).slice(-2), 
     date.getFullYear()
   ].join("-");
-
   return dateString;
 };
 
@@ -20,7 +19,6 @@ export const getTomorrow = () => {
     ("0" + (tomorrow.getMonth()+1)).slice(-2), 
     tomorrow.getFullYear()
   ].join("-");
-
   return tomorrowString;
 };
 
@@ -34,16 +32,13 @@ export const getYesterday = () => {
     ("0" + (tomorrow.getMonth()+1)).slice(-2), 
     tomorrow.getFullYear()
   ].join("-");
-
   return tomorrowString;
 };
 
 
 export const getTime = (time) => {
   if (time) {
-
       let date = new Date(time);
-
       let dateString = [
       ("0" + (date.getHours()+1)).slice(-2), 
       ("0" + date.getMinutes()).slice(-2)
@@ -56,9 +51,10 @@ export const getTime = (time) => {
 
 export const mapper = (articles, away, dateKey) => {
     return articles.map((el) => {
-      const {ID, term, [away]: airportToID, status, airline: {en: {name}}, codeShareData: [{codeShare}]} = el;
+      const {ID, term, [away]: airportToID, status, codeShareData: [{codeShare}]} = el;
       const time = el[dateKey];
-
+      const name = el.airline &&  el.airline.en &&  el.airline.en.name;
+      console.log(name);
       return ({
         id: ID,
         term: term,

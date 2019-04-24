@@ -10,18 +10,15 @@ import { mapper, getData, getTomorrow, getYesterday } from '../../helpers';
     state = {
       articles: [], 
       error: null,
-      filterDay: "today",
     }
   
     componentDidMount() {
-      this.setState({isLoading: true})
-      
       getDepartures(getData())
       .then(response =>
         this.setState({articles: mapper(response.data.body.arrival, "airportFromID.city", 'timeToStand'), 
         }) 
       )
-      .catch(error => this.setState({error}))
+      .catch(error => console.log(error))
     }
 
     onChangeDayFilter = (type) => {

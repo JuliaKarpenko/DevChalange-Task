@@ -18,12 +18,12 @@ const Timetible = ({articles}) => (
             <tbody>
             {articles.map(({id, term, time, city, status, company, flight}) => (
                 <tr key={id}>
-                    <td data-foo={term}><span className={style.span}>{term}</span></td>
-                    <td>{getTime(time)}</td>
-                    <td>{city}</td>
-                    <td>{company}</td>
-                    <td># {flight}</td>
-                    <td>{status}</td>
+                    <td data-label="Терминал" data-foo={term}><span className={style.span}>{term}</span></td>
+                    <td data-label="Время">{getTime(time)}</td>
+                    <td data-label="Место назначения">{city}</td>
+                    <td data-label="Авиакомпания">{company}</td>
+                    <td data-label="Рейс"># {flight}</td>
+                    <td data-label="Статус">{status}</td>
                 </tr>
             ))}
             </tbody>
