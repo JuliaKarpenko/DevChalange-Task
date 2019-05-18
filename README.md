@@ -1,3 +1,30 @@
+## DevChalange Task
+
+# 1. Завдання:
+Вимоги:
+Створити табло прильотів / вильотів з аеропорту Жуляни. (https://iev.aero/ru/departures)
+Очікуваний результат:
+Додаток має бути створено за допомогою create-react-app
+Додаток має повторювати функціонал і UI аеропорту. Копіювати стилі на пряму з існуючого сайту
+заборонено.
+Зчитувати дані через API https://api.iev.aero/api/flights/06-04-2019 (динамічно, підставити поточну дату).
+Базовий необхідний функціонал:
+ відображати дві закладки Arrivals / Departures
+ відображати дані для кожної закладки:
+ Terminal
+ Gate (якщо інформація присутня в API)
+ Time
+ Destination
+ Airline (без логотипу авіалінії)
+ Flight
+ Status
+ 
+# 2.UI, включаючи стилі, максимально схожий на оригінальний
+дизайн сайту Жулян
+# 3. Responsive UI. Кросбраузерність
+# 4. Можливість перемикатися між відображенням перельотів
+Yesterday / Today / Tomorrow
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
