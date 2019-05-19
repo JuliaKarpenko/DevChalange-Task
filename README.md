@@ -1,33 +1,32 @@
 # DevChalange Task
 ####  Завдання 1:
 Вимоги:
-Створити табло прильотів / вильотів з аеропорту Жуляни. (https://iev.aero/ru/departures)
-Очікуваний результат:
-Додаток має бути створено за допомогою create-react-app
+Створити табло прильотів / вильотів з аеропорту Жуляни. (https://iev.aero/ru/departures)<br>
+Очікуваний результат:<br>
+Додаток має бути створено за допомогою create-react-app<br>
 Додаток має повторювати функціонал і UI аеропорту. Копіювати стилі на пряму з існуючого сайту
-заборонено.
-Зчитувати дані через API https://api.iev.aero/api/flights/06-04-2019 (динамічно, підставити поточну дату).
-Базовий необхідний функціонал:
- відображати дві закладки Arrivals / Departures
- відображати дані для кожної закладки:
- Terminal
- Gate (якщо інформація присутня в API)
- Time
- Destination
- Airline (без логотипу авіалінії)
- Flight
- Status
+заборонено.<br>
+Зчитувати дані через API https://api.iev.aero/api/flights/06-04-2019 (динамічно, підставити поточну дату).<br>
+Базовий необхідний функціонал:<br>
+ відображати дві закладки Arrivals / Departures<br>
+ відображати дані для кожної закладки:<br>
+ Terminal<br>
+ Gate (якщо інформація присутня в API)<br>
+ Time<br>
+ Destination<br>
+ Airline (без логотипу авіалінії)<br>
+ Flight<br>
+ Status<br>
  
-####  Завдання 2.
-UI, включаючи стилі, максимально схожий на оригінальний
-дизайн сайту Жулян
-####  Завдання 3.
-Responsive UI. Кросбраузерність
-####  Завдання 4.
-Можливість перемикатися між відображенням перельотів
-Yesterday / Today / Tomorrow
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+####  Завдання 2.<br>
+UI, включаючи стилі, максимально схожий на оригінальний дизайн сайту Жулян<br>
+####  Завдання 3.<br>
+Responsive UI. Кросбраузерність<br>
+####  Завдання 4.<br>
+Можливість перемикатися між відображенням перельотів<br>
+Yesterday / Today / Tomorrow<br>
+<br>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br>
 
 ## Available Scripts
 
